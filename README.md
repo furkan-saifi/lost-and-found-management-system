@@ -40,6 +40,7 @@ lost-and-found/
 ├── uploads/              # Runtime image uploads (not tracked)
 ├── database.sql          # Database schema
 ├── index.php             # Main entry page
+├── logo.svg               # Start page logo
 ├── login_form.php        # Login form
 ├── signup_form.php       # Signup form
 └── start.php             # Start page
