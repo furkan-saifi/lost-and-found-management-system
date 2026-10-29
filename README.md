@@ -22,12 +22,12 @@ A PHP and MySQL web application for reporting and managing lost or found items. 
 ## Run locally with XAMPP
 
 1. Start **Apache** and **MySQL** in XAMPP.
-2. Copy the project folder into the `htdocs` directory, for example `C:\\xampp\\htdocs\\lost-and-found`.
+2. Copy the project folder into the `htdocs` directory, for example `C:\\xampp\\htdocs\\lost-and-found-management-system`.
 3. Open phpMyAdmin at `http://localhost/phpmyadmin`.
 4. Create a database named `lost_and_found` and import [`database.sql`](database.sql).
 5. Check `config/db.php`. The default values are `localhost`, database `lost_and_found`, user `root`, and an empty password for a standard local XAMPP setup. Change them to match your local MySQL configuration.
 6. Ensure PHP can write to the `uploads` folder so images can be uploaded.
-7. Open `http://localhost/lost-and-found/` in your browser. If needed, open `start.php` for the start page.
+7. Open `http://localhost/lost-and-found-management-system/` in your browser. If needed, open `start.php` for the start page.
 8. Register an account, sign in, and add a lost/found listing.
 
 ## Project structure
