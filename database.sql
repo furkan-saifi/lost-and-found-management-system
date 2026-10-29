@@ -21,10 +21,11 @@ CREATE TABLE IF NOT EXISTS items (
   description TEXT NOT NULL,
   item_type ENUM('lost','found') NOT NULL,
   item_image VARCHAR(255) DEFAULT NULL,
-  status VARCHAR(30) NOT NULL DEFAULT 'open',
+  is_resolved TINYINT(1) NOT NULL DEFAULT 0,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT fk_items_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
   INDEX idx_items_created_at (created_at),
   INDEX idx_items_user_id (user_id),
-  INDEX idx_items_type (item_type)
+  INDEX idx_items_type (item_type),
+  INDEX idx_items_resolved (is_resolved)
 ) ENGINE=InnoDB;
